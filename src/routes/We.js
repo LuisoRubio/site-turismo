@@ -4,7 +4,7 @@ import { Content } from "../components/Content";
 const We = () => {
   return (
     <>
-      <Content name="¿Quienes somos?" />
+      <Content name="¿Quiénes somos?" />
     </>
   );
 };

@@ -8,9 +8,9 @@ export const headItems = [
 
 // For Material UI's App Bar
 export const routeNames = [
-  "¿QUIENES SOMOS?",
+  "¿QUIÉNES SOMOS?",
   "ORGANIGRAMA",
-  "ATENCION AL CLIENTE",
+  "ATENCIÓN AL CLIENTE",
   "SERVICIOS",
 ];
 
@@ -26,5 +26,5 @@ export const socialMedia = [
   "mintur",
   "@mintur_oficial",
   "mintur_camaguey",
-  "@mintur.cuba",
+  "mintur",
 ];
