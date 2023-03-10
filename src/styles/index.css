@@ -1,0 +1,228 @@
+/* Swiper */
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  background-color: lightgrey ;
+  height: 100%;
+}
+/* Swiper */
+
+
+/* Transparent navbar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav,
+.grid,
+.footer{
+  background: linear-gradient(to right, rgb(0, 119, 255), lightblue, lightgrey, white);
+  background-size: 400% 400%;
+}
+
+.nav {
+  align-items: center;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  font-family: 'roboto';
+  justify-content: space-between;
+  padding: 25px 30px;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  display: inline-block;
+}
+
+.logoCont{
+  margin-right: 25%;
+}
+
+a{
+  font-weight:900;
+}
+
+li a {
+  /* margin-left: 40px; */
+  background: transparent;
+}
+
+.nav a{
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: transparent;
+}
+
+.lang{
+  background: transparent;
+  border: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 35px;
+}
+/* Transparent navbar */
+
+/* Swiper */
+
+.SlideView{
+  box-shadow: 0 35px 50px rgba(0, 0, 0, 0.45);
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+}
+
+.Slider{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Swiper */
+
+/* Articles */
+
+.format{
+  color: white;
+}
+
+.articleTitle{
+  font-weight: 900;
+  font-family: Times, Times New Roman, serif;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.article{
+  font-family: Times, Times New Roman, serif;
+  font-size: 19px;
+  text-align: justify;
+}
+
+.img,
+.grid{
+  border-radius: 3rem;
+  box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.grid{
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  margin-left: 15px;
+}
+
+/* Articles */
+
+
+/* Footer */
+
+.footer{
+  padding: 5rem;
+  margin-top: 7rem;
+}
+
+.contFooter{
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+.headFooter{
+  font-family: Times, Times New Roman, serif;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.groupA,
+.groupB,
+.groupC{
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-right: 55px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* Footer */
+
+/* Swiper */
+/* 
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Swiper */
+
+/* ErrorPage */
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+/* ErrorPage */
