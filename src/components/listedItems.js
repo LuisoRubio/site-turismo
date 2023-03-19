@@ -8,7 +8,7 @@ export const headItems = [
 
 // For Material UI's App Bar
 export const routeNames = [
-  "¿QUIÉNES SOMOS?",
+  // "¿QUIÉNES SOMOS?",
   "ORGANIGRAMA",
   "ATENCIÓN AL CLIENTE",
   "SERVICIOS",

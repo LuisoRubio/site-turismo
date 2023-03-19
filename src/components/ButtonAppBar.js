@@ -29,7 +29,7 @@ function HideOnScroll(props) {
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
   });
-  
+
   HideOnScroll.propTypes = {
     children: PropTypes.element.isRequired,
     // Injected by the documentation to work in an iframe.
@@ -78,7 +78,6 @@ export default function ResponsiveAppBar(props) {
     setAnchorElInst(null);
   };
 
-
   //Snackbars
   const handleClick = (Transition) => () => {
     setTransition(() => Transition);
@@ -102,12 +101,12 @@ export default function ResponsiveAppBar(props) {
                   marginY: "10px",
                   mr: 1,
                 }}
-                >
-                  <Link to="/">
+              >
+                <Link to="/">
                   <img src={img} alt="Logo" />
                 </Link>
               </Box>
-              
+
               {/* Phone View Responsive's Container */}
               <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
                 <IconButton
@@ -117,7 +116,7 @@ export default function ResponsiveAppBar(props) {
                   aria-haspopup="true"
                   onClick={handleOpenNavMenu}
                   color="inherit"
-                  >
+                >
                   <MenuIcon />
                 </IconButton>
                 <Menu
@@ -137,7 +136,7 @@ export default function ResponsiveAppBar(props) {
                   sx={{
                     display: { xs: "block", md: "none" },
                   }}
-                  >
+                >
                   {routeNames.map((page) => (
                     <MenuItem key={page} onClick={handleCloseNavMenu}>
                       <Link to={page} style={{ textDecoration: "none" }}>
@@ -153,7 +152,7 @@ export default function ResponsiveAppBar(props) {
                       <Button
                         onClick={handleOpenUserMenu}
                         sx={{ color: "black" }}
-                        >
+                      >
                         <Typography textAlign="center">
                           Instituciones
                         </Typography>
@@ -167,7 +166,7 @@ export default function ResponsiveAppBar(props) {
                       aria-controls="menu-appbar"
                       aria-haspopup="true"
                       color="inherit"
-                      >
+                    >
                       <FacebookIcon />
                     </IconButton>
                     <IconButton
@@ -175,7 +174,7 @@ export default function ResponsiveAppBar(props) {
                       aria-controls="menu-appbar"
                       aria-haspopup="true"
                       color="inherit"
-                      >
+                    >
                       <TwitterIcon />
                     </IconButton>
                     <IconButton
@@ -183,7 +182,7 @@ export default function ResponsiveAppBar(props) {
                       aria-controls="menu-appbar"
                       aria-haspopup="true"
                       color="inherit"
-                      >
+                    >
                       <InstagramIcon />
                     </IconButton>
                   </MenuItem>
@@ -205,18 +204,15 @@ export default function ResponsiveAppBar(props) {
 
               {/* Links Desktop View's Responsive Container */}
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-                {routeNames.map((page) => (
-                  <Link to={page} style={{ textDecoration: "none" }}>
-
-                    <Button
-                      key={page}
-                      onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "white", display: "block" }}
-                    >
-                      {page}
-                    </Button>
-                  </Link>
-                ))}
+                <Link to="¿QUIÉNES%20SOMOS" style={{ textDecoration: "none" }}>
+                  <Button
+                    key="¿QUIÉNES%20SOMOS"
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}
+                  >
+                    ¿QUIENES SOMOS?
+                  </Button>
+                </Link>
 
                 {/* Institutions Desktop View's Responsive Container */}
                 <Tooltip title="Instituciones Mintur">
@@ -260,8 +256,20 @@ export default function ResponsiveAppBar(props) {
                     </MenuItem>
                   ))}
                 </Menu>
+                
+                {routeNames.map((page) => (
+                  <Link to={page} style={{ textDecoration: "none" }}>
+                    <Button
+                      key={page}
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, color: "white", display: "block" }}
+                    >
+                      {page}
+                    </Button>
+                  </Link>
+                ))}
               </Box>
-                  
+
               {/* Change Language button's unimplemented prompt message */}
               <Box sx={{ flexGrow: 0 }}>
                 <Tooltip title="Cambiar Lenguaje">
